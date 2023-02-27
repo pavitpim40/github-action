@@ -13,4 +13,4 @@ jobs:
         with:
           who-to-greet: Pavit
       - name: Log Greeting time
-        run: echo ${{steps.greet.outputs.time}}
+        run: echo "${{steps.greet.outputs.time}}"
