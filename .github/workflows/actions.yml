@@ -5,6 +5,7 @@ on: [push]
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
+    environment: test
     steps:
       - name: Simple JS Action
         id: greet
