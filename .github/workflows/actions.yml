@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     steps:
+      - name: List file
+        run: |
+          pwd
+          ls
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
