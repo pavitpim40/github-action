@@ -1,6 +1,6 @@
 name: Actions Workflow
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   run-github-actions:
@@ -11,14 +11,14 @@ jobs:
         run: |
           pwd
           ls -a
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE
-          echo "${{github.token}}"
-          git clone https://pavitpim40:github.token@github.com/pavitpim40/github-action.git .
-          git checkout HEAD
-          pwd
-          ls -a
+          # echo $GITHUB_SHA
+          # echo $GITHUB_REPOSITORY
+          # echo $GITHUB_WORKSPACE
+          # echo "${{github.token}}"
+          # git clone https://pavitpim40:github.token@github.com/pavitpim40/github-action.git .
+          # git checkout HEAD
+          # pwd
+          # ls -a
       - name: List file After Checkout
         run: |
           pwd
