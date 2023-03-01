@@ -9,13 +9,13 @@ jobs:
         node_version: [6, 8, 10]
         include:
           - os: ubuntu-latest
-            node-version: 4
+            node_version: 4
             # is_ubuntu_8: 'true'
         exclude:
           - os: ubuntu-latest
             node_version: 6
           - os: macos-latest
-            node-version: 8
+            node_version: 8
       fail-fast: true
     runs-on: ${{matrix.os}}
     steps:
